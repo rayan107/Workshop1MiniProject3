@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desctopapp.workshop1_miniproject3.StudentController">
+
+    <children>
+        <AnchorPane prefHeight="422.0" prefWidth="651.0">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="102.0" layoutX="90.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/std.jpeg" />
+                    </image>
+                </ImageView>
+
+                <Label layoutX="42.0" layoutY="-4.0" text="Student Information">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+
+                <Label layoutX="25.0" layoutY="202.0" text="Name:" />
+                <Label layoutX="30.0" layoutY="243.0" text="Age:" />
+                <Label layoutX="35.0" layoutY="285.0" text="ID:" />
+
+                <TextField fx:id="nameField" layoutX="75.0" layoutY="196.0" />
+                <TextField fx:id="ageField" layoutX="75.0" layoutY="239.0" />
+                <TextField fx:id="idField" layoutX="75.0" layoutY="281.0" />
+                <TextField fx:id="passwordField" layoutX="74.0" layoutY="321.0" />
+
+                <Button fx:id="insertBtn" layoutX="36.0" layoutY="368.0" mnemonicParsing="false" onAction="#insertPerson" text="Insert" />
+
+                <Button fx:id="updateBtn" layoutX="112.0" layoutY="368.0" mnemonicParsing="false" onAction="#updatePerson" text="Update" />
+
+                <Button fx:id="deleteBtn" layoutX="190.0" layoutY="368.0" mnemonicParsing="false" onAction="#deletePerson" text="Delete" />
+
+                <TableView fx:id="tableView" layoutX="277.0" layoutY="8.0" prefHeight="402.0" prefWidth="358.0">
+                    <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="90.0" text="Name" />
+                        <TableColumn fx:id="ageColumn" prefWidth="90.0" text="Age" />
+                        <TableColumn fx:id="idColumn" prefWidth="90.0" text="ID" />
+                        <TableColumn fx:id="passwordColumn" text="Password"/>
+                    </columns>
+                </TableView>
+
+            <Label layoutX="16.0" layoutY="325.0" text="Password:" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
