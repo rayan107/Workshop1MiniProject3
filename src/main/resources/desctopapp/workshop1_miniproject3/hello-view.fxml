@@ -7,7 +7,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <AnchorPane prefHeight="400.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desctopapp.workshop1_miniproject3.HelloController">
+=======
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="576.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="desctopapp.workshop1_miniproject3.HelloController">
+>>>>>>> daf288b5939ceb2c666d0e3efea444fa84c3f42e
 
     <children>
         <ImageView fx:id="imagehp" fitHeight="313.0" fitWidth="313.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
@@ -22,6 +29,7 @@
             </font>
         </Label>
 
+<<<<<<< HEAD
         <Button fx:id="studentbtn" layoutX="389.0" layoutY="107.0" mnemonicParsing="false" onAction="#onStudentClick" prefHeight="35.0" prefWidth="138.0" text="Student">
             <font>
                 <Font size="14.0" />
@@ -30,15 +38,24 @@
         </Button>
 
         <Button fx:id="professorbtn" layoutX="389.0" layoutY="152.0" mnemonicParsing="false" onAction="#onProfessorClick" prefHeight="35.0" prefWidth="138.0" text="Professor">
+=======
+        <Button fx:id="studentbtn" layoutX="389.0" layoutY="107.0" mnemonicParsing="false"
+                onAction="#onStudentClick" prefHeight="35.0" prefWidth="138.0" text="Student">
+>>>>>>> daf288b5939ceb2c666d0e3efea444fa84c3f42e
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
 
+<<<<<<< HEAD
         <Button fx:id="Bookbtn" layoutX="389.0" layoutY="200.0" mnemonicParsing="false" onAction="#onbookclick" prefHeight="35.0" prefWidth="138.0" text="Book">
          <font>
             <Font size="14.0" />
          </font></Button>
+=======
+        <Button layoutX="389.0" layoutY="152.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="138.0" text="Button" />
+        <Button layoutX="389.0" layoutY="200.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="138.0" text="Button" />
+>>>>>>> daf288b5939ceb2c666d0e3efea444fa84c3f42e
         <Button layoutX="389.0" layoutY="245.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="138.0" text="Button" />
     </children>
 </AnchorPane>

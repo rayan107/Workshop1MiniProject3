@@ -1,6 +1,7 @@
 package desctopapp.workshop1_miniproject3;
 
 import javafx.application.Application;
+<<<<<<< HEAD
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -80,3 +81,11 @@ public class Launcher extends Application {
     }
 }
 
+=======
+
+public class Launcher {
+    public static void main(String[] args) {
+        Application.launch(UniversityProject.class, args);
+    }
+}
+>>>>>>> daf288b5939ceb2c666d0e3efea444fa84c3f42e

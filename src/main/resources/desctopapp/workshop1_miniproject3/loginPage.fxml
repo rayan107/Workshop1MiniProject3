@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<<<<<<< HEAD
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
@@ -69,4 +70,45 @@
         <RowConstraints minHeight="30" />
     </rowConstraints>
 
+=======
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="desctopapp.workshop1_miniproject3.LoginController"
+          hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <children>
+        <Text text="Welcome"
+              GridPane.columnSpan="2"
+              GridPane.rowIndex="0"
+              style="-fx-font-size: 25px;"/>
+        <Text text="Please Enter Your Credentials To Log In"
+              GridPane.columnSpan="2"
+              GridPane.rowIndex="1"/>
+        <Label text="Username :"
+               GridPane.rowIndex="2"
+               GridPane.columnIndex="0"/>
+        <TextField fx:id="uname"
+                   GridPane.rowIndex="2"
+                   GridPane.columnIndex="1"/>
+        <Label text="Password :"
+               GridPane.rowIndex="3"
+               GridPane.columnIndex="0"/>
+        <PasswordField fx:id="pass"
+                       GridPane.rowIndex="3"
+                       GridPane.columnIndex="1"/>
+        <Button fx:id="SignInbtn"
+                text="Sign In"
+                GridPane.rowIndex="4"
+                GridPane.columnIndex="1"
+                onAction="#handleSignIn"/>
+        <Text fx:id="signinmessage"
+              GridPane.rowIndex="5"
+              GridPane.columnIndex="1"
+              style="-fx-font-size: 20px;"/>
+    </children>
+>>>>>>> daf288b5939ceb2c666d0e3efea444fa84c3f42e
 </GridPane>
