@@ -4,10 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+<<<<<<< HEAD
     <groupId>desctopApp</groupId>
     <artifactId>Workshop1_MiniProject3</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Workshop1_MiniProject3</name>
+=======
+    <groupId>com.example</groupId>
+    <artifactId>test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>test</name>
+>>>>>>> 1dfdf14 (new mod)
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,8 +54,13 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
+<<<<<<< HEAD
                     <source>23</source>
                     <target>23</target>
+=======
+                    <source>25</source>
+                    <target>25</target>
+>>>>>>> 1dfdf14 (new mod)
                 </configuration>
             </plugin>
             <plugin>
@@ -60,9 +72,13 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
+<<<<<<< HEAD
                             <mainClass>
                                 desctopapp.workshop1_miniproject3/desctopapp.workshop1_miniproject3.HelloApplication
                             </mainClass>
+=======
+                            <mainClass>com.example.test/com.example.test.HelloApplication</mainClass>
+>>>>>>> 1dfdf14 (new mod)
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
