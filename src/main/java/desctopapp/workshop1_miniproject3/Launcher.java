@@ -1,7 +1,7 @@
 package desctopapp.workshop1_miniproject3;
 
 import javafx.application.Application;
-<<<<<<< HEAD
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
