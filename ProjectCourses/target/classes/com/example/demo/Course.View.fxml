@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CoursesController">
+    <top>
+        <Label text="Course Management" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+            <BorderPane.margin>
+                <Insets bottom="20.0" top="20.0" />
+            </BorderPane.margin>
+        </Label>
+    </top>
+
+    <center>
+        <VBox spacing="20.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </BorderPane.margin>
+
+            <HBox spacing="30.0" alignment="CENTER">
+                <GridPane hgap="15.0" vgap="15.0">
+                    <Label text="CRN:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="crnField" promptText="Enter CRN" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                    <Label text="Course Name:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="courseNameField" promptText="Enter Course Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                    <Label text="Instructor:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="instructorField" promptText="Enter Instructor Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                    <Label text="Credits:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="creditsField" promptText="Enter Credits" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                    <Label text="Nb of Students:" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="nbOfStudentsField" promptText="Enter Number of Students" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                </GridPane>
+
+                <VBox alignment="CENTER">
+                    <ImageView fitHeight="200.0" fitWidth="200.0" preserveRatio="true">
+                        <image>
+                            <Image url="@course-icon.png.jpg" />
+                        </image>
+                    </ImageView>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="10.0" alignment="CENTER">
+                <Button fx:id="createBtn" onAction="#handleCreate" text="Create" prefWidth="100.0">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="updateBtn" onAction="#handleUpdate" text="Update" prefWidth="100.0">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="deleteBtn" onAction="#handleDelete" text="Delete" prefWidth="100.0">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="clearBtn" onAction="#handleClear" text="Clear" prefWidth="100.0">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </HBox>
+
+            <TableView fx:id="coursesTable" prefHeight="300.0">
+                <columns>
+                    <TableColumn fx:id="crnColumn" text="CRN" prefWidth="100.0" />
+                    <TableColumn fx:id="courseNameColumn" text="Course Name" prefWidth="200.0" />
+                    <TableColumn fx:id="instructorColumn" text="Instructor" prefWidth="150.0" />
+                    <TableColumn fx:id="creditsColumn" text="Credits" prefWidth="80.0" />
+                    <TableColumn fx:id="nbOfStudentsColumn" text="Students" prefWidth="80.0" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>
+
